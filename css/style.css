@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--main_bg);
+  font-size: var(--size-text-1);
+}
+
+:root {
+  --main_bg: #d9d9d9;
+  --color-btn: #1e2772;
+  --color-bnt-hover: #25308d;
+  --color-text-1: #000;
+  --color-text-2: #555;
+  --color-text-3: #fff;
+  --bg-line: #999;
+  --size-text-1: 16px;
+  --size-text-2: 18px;
+  --size-text-3: 20px;
+  --size-text-3: 24px;
+}
+
+.login,
+.registration {
+  margin-top: 40px;
+}
+.login-form input {
+  padding: 15px;
+}
+
+.btn-blue {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 8px;
+  border: none;
+  background: var(--color-btn);
+  color: var(--color-text-3);
+}
+.btn-blue:hover {
+  background: var(--color-bnt-hover);
+}
+
+.btn-blue-a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: var(--color-btn);
+  color: var(--color-text-3);
+  margin: 0;
+}
+.btn-blue-a:hover {
+  background: var(--color-bnt-hover);
+}
+
+.section-padding {
+  padding: 50px 0;
+}
+.border-form {
+  border-top: 2px solid var(--color-text-2);
+}
+
+.alert-info {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 550px;
+}
+
+input {
+  width: 100%;
+}
+
+/*Main page*/
+
+.nav-item {
+  margin: 0 10px;
+}
+.navbar-users {
+  font-weight: 500;
+  margin: 15px 20px 0 100px;
+}
+.navbar-brand {
+  margin-right: 50px;
+}
+
+/*Info_users*/
+
+.table-info-users {
+  margin-top: 50px;
+}
+.section-info-users-block {
+  position: relative;
+}
+
+.info-search {
+  position: absolute;
+  right: 0;
+  top: -50px;
+}
+
+/*Student forms*/
+
+.student-forms-title {
+  text-align: center;
+  font-size: var(--size-text-2);
+  border-bottom: 3px solid var(--bg-line);
+  margin-bottom: 50px;
+}
+.student-forms-title h2 {
+  margin-bottom: 10px;
+}
+.student-forms-info {
+  text-align: center;
+
+  border-bottom: 3px solid var(--bg-line);
+  margin-bottom: 20px;
+}
+.student-forms-info h3 {
+  font-size: var(--size-text-3);
+  margin: 20px 0;
+}
+.form-control,
+.form-select {
+  min-width: 320px;
+}
+.form-outline {
+  /* margin-right: 60px; */
+}
+
+.btn-bd {
+  display: block;
+  margin: 40px auto 0 auto;
+  max-width: 300px;
+}
+
+/*------- student_page_info ------*/
+
+.add-info {
+  display: block;
+  margin: 40px auto 0 auto;
+  max-width: 300px;
+}
+
+.student-info-block {
+  display: flex;
+}
+.student-info-block p:first-child {
+  font-weight: 500;
+}
+
+.student-info-block p:last-child {
+  margin-left: 20px;
+}
+
+.student-info-block {
+  font-size: var(--size-text-2);
+}

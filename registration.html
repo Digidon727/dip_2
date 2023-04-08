@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Регистрация</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="registration">
+      <div class="container px-3">
+        <div class="alert-info">
+          <div
+            class="alert alert-success alert-dismissible fade show mt-3"
+            role="alert"
+          >
+            <strong>Все хорошо!</strong>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+
+          <div
+            class="alert alert-danger alert-dismissible fade show mt-3"
+            role="alert"
+          >
+            <strong>Ошибка</strong>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-7 col-xl-5">
+            <div class="text-center">
+              <img src="./img/Dummy_Logo.svg" alt="" />
+              <p>Создайте свою учетную запись</p>
+            </div>
+            <form
+              action="#"
+              method="post"
+              class="login-form needs-validation"
+              novalidate
+            >
+              <div class="mb-3">
+                <label for="validationFIO" class="form-label"
+                  >Введите ФИО
+                </label>
+                <input
+                  type="name"
+                  name="name_fio"
+                  class="form-control"
+                  id="validationFIO"
+                  placeholder="Введите ФИО.."
+                  required
+                />
+                <div class="valid-feedback">Все хорошо!</div>
+                <div class="invalid-feedback">
+                  Пожалуйста, выберите имя пользователя.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="validationEmail" class="form-label">Email </label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="validationEmail"
+                  aria-describedby="emailHelp"
+                  placeholder="test@gmail.com"
+                  required
+                />
+                <div class="valid-feedback">Все хорошо!</div>
+                <div class="invalid-feedback">Пожалуйста, проверьте поле.</div>
+              </div>
+              <div class="mb-3">
+                <label for="validationPass" class="form-label">Пароль </label>
+                <input
+                  type="password"
+                  name="pass"
+                  class="form-control"
+                  id="validationPass"
+                  placeholder="Введите пароль..."
+                  required
+                />
+                <div class="invalid-feedback">Пожалуйста, проверьте поле.</div>
+                <div class="valid-feedback">Все хорошо!</div>
+              </div>
+              <button type="submit" class="btn-blue">Зарегистрироваться</button>
+            </form>
+            <div class="mt-3 pt-3 text-center border-form">
+              <p>У меня уже есть <a href="./login.html">аккаунт!</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

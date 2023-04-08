@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Регистрация студента</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/media.css" />
+  </head>
+  <body>
+    <header class="header py-3 border-bottom border-secondary">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container px-2">
+          <a class="navbar-brand" href="#">Логотип</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  href="./main_page.html"
+                  class="btn-blue-a"
+                  role="button"
+                  aria-disabled="true"
+                  >Главная страница
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="./student_registration.html"
+                  class="btn-blue-a"
+                  role="button"
+                  aria-disabled="true"
+                  >Регистрация студента
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="./teacher_registration.html"
+                  class="btn-blue-a"
+                  role="button"
+                  aria-disabled="true"
+                  >Регистрация преподавателя
+                </a>
+              </li>
+                          </ul>
+            <div class="navbar-users">
+              <p>Добро пожаловать: Admin</p>
+            </div>
+            <div>
+              <a class="btn-blue-a">Выйти</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="student-forms section-padding">
+      <div class="container">
+        <div class="student-forms-title">
+          <h2>Регистрация студента</h2>
+        </div>
+        <div class="student-forms-info"><h3>Общая информация</h3></div>
+
+        <div class="form-info-setudent d-flex justify-content-center">
+          <form action="#" method="post" class="form">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example1"
+                    >Введите ФИО студента:</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example1"
+                    class="form-control"
+                    placeholder="ФИО студента..."
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example2"
+                    >ФИО Отца:</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example2"
+                    class="form-control"
+                    placeholder="ФИО.."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example1"
+                    >Место жительство:</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example1"
+                    class="form-control"
+                    placeholder="Место..."
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example2"
+                    >Контактные данные:</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example2"
+                    class="form-control"
+                    placeholder="Телефон"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example1"
+                    >Дата рождения</label
+                  >
+                  <input
+                    type="date"
+                    id="form6Example1"
+                    class="form-control"
+                    data-mdb-inline="true"
+                    placeholder="ФИО студента..."
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example2"
+                    >ФИО Матери:</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example2"
+                    class="form-control"
+                    placeholder="ФИО.."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example1"
+                    >Национальность</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Пример выбора по умолчанию"
+                  >
+                    <option value="1">рус.</option>
+                    <option value="2">кыр.</option>
+                    <option value="3">другой вариант</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example2"
+                    >Контактные данные:</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example2"
+                    class="form-control"
+                    placeholder="Телефон"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example1"
+                    >Контактные данные:</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example1"
+                    class="form-control"
+                    placeholder="Телефон..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example1">E-mail:</label>
+                  <input
+                    type="email"
+                    id="form6Example1"
+                    class="form-control"
+                    placeholder="E-mail..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="student-forms-info">
+              <h3>Информация об образовании</h3>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example2"
+                    >Тип образования:</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example2"
+                    class="form-control"
+                    placeholder="Тип.."
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example1"
+                    >Дата окончания:
+                  </label>
+                  <input
+                    type="date"
+                    id="form6Example1"
+                    class="form-control"
+                    data-mdb-inline="true"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example1"
+                    >Место обучения: :</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example1"
+                    class="form-control"
+                    placeholder="Место..."
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example2"
+                    >Наименования кафедры::</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example2"
+                    class="form-control"
+                    placeholder="Название..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example1"
+                    >№_Диплома:</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example1"
+                    class="form-control"
+                    placeholder="Номер..."
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example2"
+                    >Специальность:</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example2"
+                    class="form-control"
+                    placeholder="Специальность..."
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="student-forms-info">
+              <h3>Информация о поступлении в ВУЗ</h3>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example1"
+                    >Название ВУЗа:</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example1"
+                    class="form-control"
+                    placeholder="Номер..."
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example2"
+                    >Направление:</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example2"
+                    class="form-control"
+                    placeholder="Направление..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example2"
+                    >Название кафедры:</label
+                  >
+                  <input
+                    type="text"
+                    id="form6Example2"
+                    class="form-control"
+                    placeholder="Тип.."
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example1"
+                    >Дата поступления:
+                  </label>
+                  <input
+                    type="date"
+                    id="form6Example1"
+                    class="form-control"
+                    data-mdb-inline="true"
+                  />
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn-blue btn-bd">Добавить в БД</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
